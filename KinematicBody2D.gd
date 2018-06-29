@@ -6,7 +6,7 @@ const UP = Vector2(0, -1)
 const GRAVITY = 20
 const SPEED = 200
 const JUMP_HIGHT = -500
-
+#change
 func _physics_process(delta):
 	motion.y += 10
 	
