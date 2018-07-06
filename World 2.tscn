@@ -1,9 +1,15 @@
-[gd_scene load_steps=7 format=2]
+[gd_scene load_steps=16 format=2]
 
 [ext_resource path="res://KinematicBody2D.tscn" type="PackedScene" id=1]
 [ext_resource path="res://Brick Block.tscn" type="PackedScene" id=2]
 [ext_resource path="res://Chargin Chuck.gd" type="Script" id=3]
 [ext_resource path="res://Mario/c2b9a5e96321d1a560ad30f4c4d96c0a.png" type="Texture" id=4]
+[ext_resource path="res://Ninji.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Thwomp.gd" type="Script" id=6]
+[ext_resource path="res://Mario/200px-ThwompNSMBU.png" type="Texture" id=7]
+[ext_resource path="res://Mario/SuperThwomp_NSMBW.png" type="Texture" id=8]
+[ext_resource path="res://Area2D.gd" type="Script" id=9]
+[ext_resource path="res://Mario/3bd3e7fcf03935e331b008d1f9398f61.png" type="Texture" id=10]
 
 [sub_resource type="TileSet" id=1]
 
@@ -13,7 +19,31 @@
 custom_solver_bias = 0.0
 extents = Vector2( 90.4134, 64 )
 
-[node name="World 2" type="Node2D" index="0"]
+[sub_resource type="RectangleShape2D" id=3]
+
+custom_solver_bias = 0.0
+extents = Vector2( 10, 32 )
+
+[sub_resource type="SpriteFrames" id=4]
+
+animations = [ {
+"frames": [ ExtResource( 7 ) ],
+"loop": true,
+"name": "awake",
+"speed": 5.0
+}, {
+"frames": [ ExtResource( 8 ) ],
+"loop": true,
+"name": "sleep",
+"speed": 5.0
+} ]
+
+[sub_resource type="RectangleShape2D" id=5]
+
+custom_solver_bias = 0.0
+extents = Vector2( 6.5, 6.5 )
+
+[node name="World 2" type="Node2D"]
 
 [node name="TileMap" type="TileMap" parent="." index="0"]
 
@@ -37,6 +67,9 @@ tile_data = PoolIntArray(  )
 
 [node name="KinematicBody2D" parent="." index="1" instance=ExtResource( 1 )]
 
+position = Vector2( 0, 96 )
+scale = Vector2( 0.75, 1 )
+
 [node name="BrickBlocks 2" type="Node2D" parent="." index="2"]
 
 editor/display_folded = true
@@ -51,51 +84,98 @@ position = Vector2( 704, 416 )
 
 [node name="Brick Block" parent="BrickBlocks 2" index="2" instance=ExtResource( 2 )]
 
-[node name="Brick Block2" parent="BrickBlocks 2" index="3" instance=ExtResource( 2 )]
+[node name="Brick Block22" parent="BrickBlocks 2" index="3" instance=ExtResource( 2 )]
+
+position = Vector2( 448, 64 )
+
+[node name="Brick Block21" parent="BrickBlocks 2" index="4" instance=ExtResource( 2 )]
+
+position = Vector2( 176, 0 )
+scale = Vector2( 1.5, 1 )
+
+[node name="Brick Block23" parent="BrickBlocks 2" index="5" instance=ExtResource( 2 )]
+
+position = Vector2( 1072, 0 )
+scale = Vector2( 1.5, 1 )
+
+[node name="Brick Block14" parent="BrickBlocks 2" index="6" instance=ExtResource( 2 )]
+
+position = Vector2( 1168, 192 )
+scale = Vector2( 1.5, 1 )
+
+[node name="Brick Block15" parent="BrickBlocks 2" index="7" instance=ExtResource( 2 )]
+
+position = Vector2( 1264, 192 )
+scale = Vector2( 1.5, 1 )
+
+[node name="Brick Block16" parent="BrickBlocks 2" index="8" instance=ExtResource( 2 )]
+
+position = Vector2( 1504, 544 )
+
+[node name="Brick Block17" parent="BrickBlocks 2" index="9" instance=ExtResource( 2 )]
+
+position = Vector2( 1440, 544 )
+
+[node name="Brick Block18" parent="BrickBlocks 2" index="10" instance=ExtResource( 2 )]
+
+position = Vector2( 1376, 544 )
+
+[node name="Brick Block19" parent="BrickBlocks 2" index="11" instance=ExtResource( 2 )]
+
+position = Vector2( 1312, 544 )
+
+[node name="Brick Block20" parent="BrickBlocks 2" index="12" instance=ExtResource( 2 )]
+
+position = Vector2( 1248, 544 )
+
+[node name="Brick Block2" parent="BrickBlocks 2" index="13" instance=ExtResource( 2 )]
 
 position = Vector2( 1184, 544 )
 
-[node name="Brick Block3" parent="BrickBlocks 2" index="4" instance=ExtResource( 2 )]
+[node name="Brick Block3" parent="BrickBlocks 2" index="14" instance=ExtResource( 2 )]
 
 position = Vector2( 1120, 544 )
 
-[node name="Brick Block4" parent="BrickBlocks 2" index="5" instance=ExtResource( 2 )]
+[node name="Brick Block4" parent="BrickBlocks 2" index="15" instance=ExtResource( 2 )]
 
 position = Vector2( 1056, 544 )
 
-[node name="Brick Block5" parent="BrickBlocks 2" index="6" instance=ExtResource( 2 )]
+[node name="Brick Block5" parent="BrickBlocks 2" index="16" instance=ExtResource( 2 )]
 
 position = Vector2( 896, 416 )
 
-[node name="Brick Block6" parent="BrickBlocks 2" index="7" instance=ExtResource( 2 )]
+[node name="Brick Block6" parent="BrickBlocks 2" index="17" instance=ExtResource( 2 )]
 
 position = Vector2( 832, 416 )
 
-[node name="Brick Block7" parent="BrickBlocks 2" index="8" instance=ExtResource( 2 )]
+[node name="Brick Block7" parent="BrickBlocks 2" index="18" instance=ExtResource( 2 )]
 
 position = Vector2( 768, 416 )
 
-[node name="Brick Block9" parent="BrickBlocks 2" index="9" instance=ExtResource( 2 )]
+[node name="Brick Block9" parent="BrickBlocks 2" index="19" instance=ExtResource( 2 )]
 
 position = Vector2( 640, 416 )
 
-[node name="Brick Block10" parent="BrickBlocks 2" index="10" instance=ExtResource( 2 )]
+[node name="Brick Block10" parent="BrickBlocks 2" index="20" instance=ExtResource( 2 )]
 
-position = Vector2( 288, 384 )
+position = Vector2( 352, 416 )
 
-[node name="Brick Block11" parent="BrickBlocks 2" index="11" instance=ExtResource( 2 )]
+[node name="Brick Block11" parent="BrickBlocks 2" index="21" instance=ExtResource( 2 )]
 
 position = Vector2( 352, 544 )
 
-[node name="Brick Block12" parent="BrickBlocks 2" index="12" instance=ExtResource( 2 )]
+[node name="Brick Block12" parent="BrickBlocks 2" index="22" instance=ExtResource( 2 )]
 
 position = Vector2( 288, 544 )
 
-[node name="Node2D" type="Node2D" parent="." index="3"]
+[node name="Chargin Chucks" type="Node2D" parent="." index="3"]
 
-[node name="Chargin Chuck" type="KinematicBody2D" parent="Node2D" index="0"]
+editor/display_folded = true
 
-position = Vector2( 832, 288 )
+[node name="Chargin Chuck" type="KinematicBody2D" parent="Chargin Chucks" index="0"]
+
+editor/display_folded = true
+position = Vector2( 640, 192 )
 scale = Vector2( 2.5, 2.5 )
 input_pickable = false
 collision_layer = 1
@@ -106,16 +186,147 @@ __meta__ = {
 "_edit_group_": true
 }
 
-[node name="Sprite" type="Sprite" parent="Node2D/Chargin Chuck" index="0"]
+[node name="Sprite" type="Sprite" parent="Chargin Chucks/Chargin Chuck" index="0"]
 
 position = Vector2( -2.43382, 7.62344 )
 scale = Vector2( -0.181656, 0.204904 )
 texture = ExtResource( 4 )
 
-[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Chargin Chuck" index="1"]
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Chargin Chucks/Chargin Chuck" index="1"]
 
 position = Vector2( 0.718145, 1.67916 )
 scale = Vector2( 0.418764, 0.548072 )
 shape = SubResource( 2 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="Chargin Chucks/Chargin Chuck" index="2"]
+
+navpoly = null
+enabled = true
+
+[node name="Chargin Chuck2" type="KinematicBody2D" parent="Chargin Chucks" index="1"]
+
+editor/display_folded = true
+position = Vector2( 1216, 384 )
+scale = Vector2( 2.5, 2.5 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+collision/safe_margin = 0.08
+script = ExtResource( 3 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Chargin Chucks/Chargin Chuck2" index="0"]
+
+position = Vector2( -2.43382, 7.62344 )
+scale = Vector2( -0.181656, 0.204904 )
+texture = ExtResource( 4 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Chargin Chucks/Chargin Chuck2" index="1"]
+
+position = Vector2( 0.718145, 1.67916 )
+scale = Vector2( 0.418764, 0.548072 )
+shape = SubResource( 2 )
+
+[node name="NavigationPolygonInstance" type="NavigationPolygonInstance" parent="Chargin Chucks/Chargin Chuck2" index="2"]
+
+navpoly = null
+enabled = true
+
+[node name="Ninji" parent="." index="4" instance=ExtResource( 5 )]
+
+position = Vector2( 864, 352 )
+
+[node name="Thwomps" type="Node2D" parent="." index="5"]
+
+editor/display_folded = true
+position = Vector2( 192, 64 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Thwomp" type="KinematicBody2D" parent="Thwomps" index="0"]
+
+position = Vector2( -32, 0 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+collision/safe_margin = 0.08
+script = ExtResource( 6 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Thwomps/Thwomp" index="0"]
+
+position = Vector2( 16, 16 )
+scale = Vector2( 3.69231, 1.37143 )
+shape = SubResource( 3 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Thwomps/Thwomp" index="1"]
+
+position = Vector2( 15.6033, 16 )
+scale = Vector2( 0.793388, 0.685714 )
+frames = SubResource( 4 )
+animation = "sleep"
+_sections_unfolded = [ "Transform" ]
+
+[node name="Thwomps2" type="Node2D" parent="." index="6"]
+
+editor/display_folded = true
+position = Vector2( 1088, 64 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Thwomp" type="KinematicBody2D" parent="Thwomps2" index="0"]
+
+position = Vector2( -32, 0 )
+input_pickable = false
+collision_layer = 1
+collision_mask = 1
+collision/safe_margin = 0.08
+script = ExtResource( 6 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Thwomps2/Thwomp" index="0"]
+
+position = Vector2( 16, 16 )
+scale = Vector2( 3.69231, 1.37143 )
+shape = SubResource( 3 )
+
+[node name="AnimatedSprite" type="AnimatedSprite" parent="Thwomps2/Thwomp" index="1"]
+
+position = Vector2( 15.6033, 16 )
+scale = Vector2( 0.793388, 0.685714 )
+frames = SubResource( 4 )
+animation = "sleep"
+_sections_unfolded = [ "Transform" ]
+
+[node name="Node2D" type="Node2D" parent="." index="7"]
+
+position = Vector2( 1472, 480 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Area2D" type="Area2D" parent="Node2D" index="0"]
+
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+script = ExtResource( 9 )
+
+[node name="Sprite" type="Sprite" parent="Node2D/Area2D" index="0"]
+
+scale = Vector2( 0.2, 0.170213 )
+texture = ExtResource( 10 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Area2D" index="1"]
+
+position = Vector2( -2.09808e-005, -1.90735e-006 )
+scale = Vector2( 4.92308, 4.92308 )
+shape = SubResource( 5 )
 
 

@@ -1,0 +1,612 @@
+[gd_scene load_steps=9 format=2]
+
+[ext_resource path="res://Ninji2.tscn" type="PackedScene" id=1]
+[ext_resource path="res://KinematicBody2D.tscn" type="PackedScene" id=2]
+[ext_resource path="res://Brick Block.tscn" type="PackedScene" id=3]
+[ext_resource path="res://Thwomps.tscn" type="PackedScene" id=4]
+[ext_resource path="res://world complete_fil.tscn" type="PackedScene" id=5]
+[ext_resource path="res://Mario/3bd3e7fcf03935e331b008d1f9398f61.png" type="Texture" id=6]
+[ext_resource path="res://You Win.gd" type="Script" id=7]
+
+[sub_resource type="RectangleShape2D" id=1]
+
+custom_solver_bias = 0.0
+extents = Vector2( 6.5, 6.5 )
+
+[node name="World 3" type="Node2D" index="0"]
+
+[node name="Ninji2" parent="." index="0" instance=ExtResource( 1 )]
+
+position = Vector2( 1248, 384 )
+
+[node name="KinematicBody2D" parent="." index="1" instance=ExtResource( 2 )]
+
+[node name="Brick Block 3" type="Node" parent="." index="2"]
+
+editor/display_folded = true
+
+[node name="Brick Block6" parent="Brick Block 3" index="0" instance=ExtResource( 3 )]
+
+position = Vector2( 288, 544 )
+
+[node name="Brick Block9" parent="Brick Block 3" index="1" instance=ExtResource( 3 )]
+
+editor/display_folded = false
+position = Vector2( 96, 544 )
+
+[node name="Brick Block8" parent="Brick Block 3" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 160, 544 )
+
+[node name="Brick Block5" parent="Brick Block 3" index="3" instance=ExtResource( 3 )]
+
+position = Vector2( 160, 416 )
+
+[node name="Brick Block4" parent="Brick Block 3" index="4" instance=ExtResource( 3 )]
+
+position = Vector2( 160, 352 )
+
+[node name="Brick Block3" parent="Brick Block 3" index="5" instance=ExtResource( 3 )]
+
+position = Vector2( 160, 288 )
+
+[node name="Brick Block2" parent="Brick Block 3" index="6" instance=ExtResource( 3 )]
+
+position = Vector2( 160, 224 )
+
+[node name="Brick Block14" parent="Brick Block 3" index="7" instance=ExtResource( 3 )]
+
+position = Vector2( 352, 544 )
+
+[node name="Brick Block7" parent="Brick Block 3" index="8" instance=ExtResource( 3 )]
+
+position = Vector2( 224, 544 )
+
+[node name="Brick Block12" parent="Brick Block 3" index="9" instance=ExtResource( 3 )]
+
+position = Vector2( 352, 416 )
+
+[node name="Brick Block13" parent="Brick Block 3" index="10" instance=ExtResource( 3 )]
+
+position = Vector2( 352, 480 )
+
+[node name="Brick Block11" parent="Brick Block 3" index="11" instance=ExtResource( 3 )]
+
+position = Vector2( 352, 352 )
+
+[node name="Brick Block22" parent="Brick Block 3" index="12" instance=ExtResource( 3 )]
+
+position = Vector2( 352, 288 )
+
+[node name="Brick Block21" parent="Brick Block 3" index="13" instance=ExtResource( 3 )]
+
+position = Vector2( 352, 224 )
+
+[node name="Brick Block72" parent="Brick Block 3" index="14" instance=ExtResource( 3 )]
+
+position = Vector2( 640, 320 )
+
+[node name="Brick Block69" parent="Brick Block 3" index="15" instance=ExtResource( 3 )]
+
+position = Vector2( 640, 32 )
+
+[node name="Brick Block42" parent="Brick Block 3" index="16" instance=ExtResource( 3 )]
+
+position = Vector2( 992, 224 )
+
+[node name="Brick Block97" parent="Brick Block 3/Brick Block42" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 128, 384 )
+
+[node name="Brick Block99" parent="Brick Block 3/Brick Block42/Brick Block97" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( -128, 0 )
+
+[node name="Brick Block102" parent="Brick Block 3/Brick Block42/Brick Block97/Brick Block99" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( -192, 0 )
+
+[node name="Brick Block100" parent="Brick Block 3/Brick Block42/Brick Block97/Brick Block99/Brick Block102" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 128, 0 )
+
+[node name="Brick Block94" parent="Brick Block 3/Brick Block42/Brick Block97/Brick Block99" index="3" instance=ExtResource( 3 )]
+
+position = Vector2( 256, -96 )
+
+[node name="Brick Block93" parent="Brick Block 3/Brick Block42/Brick Block97/Brick Block99/Brick Block94" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( -160, -64 )
+
+[node name="Brick Block92" parent="Brick Block 3/Brick Block42/Brick Block97/Brick Block99/Brick Block94/Brick Block93" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 64, -64 )
+
+[node name="Brick Block91" parent="Brick Block 3/Brick Block42/Brick Block97/Brick Block99/Brick Block94/Brick Block93/Brick Block92" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 128, 96 )
+
+[node name="Brick Block90" parent="Brick Block 3/Brick Block42/Brick Block97/Brick Block99/Brick Block94/Brick Block93/Brick Block92/Brick Block91" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 64, 0 )
+
+[node name="Brick Block89" parent="Brick Block 3/Brick Block42/Brick Block97/Brick Block99/Brick Block94/Brick Block93/Brick Block92/Brick Block91/Brick Block90" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 0, -64 )
+
+[node name="Brick Block88" parent="Brick Block 3/Brick Block42/Brick Block97/Brick Block99/Brick Block94/Brick Block93/Brick Block92/Brick Block91/Brick Block90/Brick Block89" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 0, -64 )
+
+[node name="Brick Block87" parent="Brick Block 3/Brick Block42/Brick Block97/Brick Block99/Brick Block94/Brick Block93/Brick Block92/Brick Block91/Brick Block90/Brick Block89/Brick Block88" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 0, -64 )
+
+[node name="Brick Block86" parent="Brick Block 3/Brick Block42/Brick Block97/Brick Block99/Brick Block94/Brick Block93/Brick Block92/Brick Block91/Brick Block90/Brick Block89/Brick Block88/Brick Block87" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 0, -64 )
+
+[node name="Brick Block85" parent="Brick Block 3/Brick Block42/Brick Block97/Brick Block99/Brick Block94/Brick Block93/Brick Block92/Brick Block91/Brick Block90/Brick Block89/Brick Block88/Brick Block87/Brick Block86" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 0, -64 )
+
+[node name="Brick Block84" parent="Brick Block 3/Brick Block42/Brick Block97/Brick Block99/Brick Block94/Brick Block93/Brick Block92/Brick Block91/Brick Block90/Brick Block89/Brick Block88/Brick Block87/Brick Block86/Brick Block85" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( -192, -128 )
+
+[node name="Brick Block82" parent="Brick Block 3/Brick Block42/Brick Block97/Brick Block99/Brick Block94/Brick Block93/Brick Block92/Brick Block91/Brick Block90/Brick Block89/Brick Block88/Brick Block87/Brick Block86/Brick Block85/Brick Block84" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 128, -32 )
+
+[node name="Brick Block81" parent="Brick Block 3/Brick Block42/Brick Block97/Brick Block99/Brick Block94/Brick Block93/Brick Block92/Brick Block91/Brick Block90/Brick Block89/Brick Block88/Brick Block87/Brick Block86/Brick Block85/Brick Block84/Brick Block82" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 64, 0 )
+
+[node name="Brick Block80" parent="Brick Block 3/Brick Block42/Brick Block97/Brick Block99/Brick Block94/Brick Block93/Brick Block92/Brick Block91/Brick Block90/Brick Block89/Brick Block88/Brick Block87/Brick Block86/Brick Block85/Brick Block84/Brick Block82/Brick Block81" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 64, 0 )
+
+[node name="Brick Block79" parent="Brick Block 3/Brick Block42/Brick Block97/Brick Block99/Brick Block94/Brick Block93/Brick Block92/Brick Block91/Brick Block90/Brick Block89/Brick Block88/Brick Block87/Brick Block86/Brick Block85/Brick Block84/Brick Block82/Brick Block81/Brick Block80" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 64, 32 )
+
+[node name="Brick Block78" parent="Brick Block 3/Brick Block42/Brick Block97/Brick Block99/Brick Block94/Brick Block93/Brick Block92/Brick Block91/Brick Block90/Brick Block89/Brick Block88/Brick Block87/Brick Block86/Brick Block85/Brick Block84/Brick Block82/Brick Block81/Brick Block80/Brick Block79" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 32, 64 )
+
+[node name="Brick Block77" parent="Brick Block 3/Brick Block42/Brick Block97/Brick Block99/Brick Block94/Brick Block93/Brick Block92/Brick Block91/Brick Block90/Brick Block89/Brick Block88/Brick Block87/Brick Block86/Brick Block85/Brick Block84/Brick Block82/Brick Block81/Brick Block80/Brick Block79/Brick Block78" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 0, 64 )
+
+[node name="Brick Block76" parent="Brick Block 3/Brick Block42/Brick Block97/Brick Block99/Brick Block94/Brick Block93/Brick Block92/Brick Block91/Brick Block90/Brick Block89/Brick Block88/Brick Block87/Brick Block86/Brick Block85/Brick Block84/Brick Block82/Brick Block81/Brick Block80/Brick Block79/Brick Block78/Brick Block77" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 0, 64 )
+
+[node name="Brick Block75" parent="Brick Block 3/Brick Block42/Brick Block97/Brick Block99/Brick Block94/Brick Block93/Brick Block92/Brick Block91/Brick Block90/Brick Block89/Brick Block88/Brick Block87/Brick Block86/Brick Block85/Brick Block84/Brick Block82/Brick Block81/Brick Block80/Brick Block79/Brick Block78/Brick Block77/Brick Block76" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 0, 64 )
+
+[node name="Brick Block74" parent="Brick Block 3/Brick Block42/Brick Block97/Brick Block99/Brick Block94/Brick Block93/Brick Block92/Brick Block91/Brick Block90/Brick Block89/Brick Block88/Brick Block87/Brick Block86/Brick Block85/Brick Block84/Brick Block82/Brick Block81/Brick Block80/Brick Block79/Brick Block78/Brick Block77/Brick Block76/Brick Block75" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 0, 64 )
+
+[node name="Brick Block73" parent="Brick Block 3/Brick Block42/Brick Block97/Brick Block99/Brick Block94/Brick Block93/Brick Block92/Brick Block91/Brick Block90/Brick Block89/Brick Block88/Brick Block87/Brick Block86/Brick Block85/Brick Block84/Brick Block82/Brick Block81/Brick Block80/Brick Block79/Brick Block78/Brick Block77/Brick Block76/Brick Block75/Brick Block74" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 0, 64 )
+
+[node name="Brick Block134" parent="Brick Block 3/Brick Block42/Brick Block97/Brick Block99/Brick Block94/Brick Block93/Brick Block92/Brick Block91/Brick Block90/Brick Block89/Brick Block88/Brick Block87/Brick Block86/Brick Block85/Brick Block84/Brick Block82/Brick Block81/Brick Block80/Brick Block79/Brick Block78/Brick Block77/Brick Block76/Brick Block75/Brick Block74/Brick Block73" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 0, 32 )
+
+[node name="Brick Block133" parent="Brick Block 3/Brick Block42/Brick Block97/Brick Block99/Brick Block94/Brick Block93/Brick Block92/Brick Block91/Brick Block90/Brick Block89/Brick Block88/Brick Block87/Brick Block86/Brick Block85/Brick Block84/Brick Block82/Brick Block81/Brick Block80/Brick Block79/Brick Block78/Brick Block77/Brick Block76/Brick Block75/Brick Block74/Brick Block73/Brick Block134" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 0, 64 )
+
+[node name="Brick Block132" parent="Brick Block 3/Brick Block42/Brick Block97/Brick Block99/Brick Block94/Brick Block93/Brick Block92/Brick Block91/Brick Block90/Brick Block89/Brick Block88/Brick Block87/Brick Block86/Brick Block85/Brick Block84/Brick Block82/Brick Block81/Brick Block80/Brick Block79/Brick Block78/Brick Block77/Brick Block76/Brick Block75/Brick Block74/Brick Block73/Brick Block134/Brick Block133" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 0, 64 )
+
+[node name="Brick Block131" parent="Brick Block 3/Brick Block42/Brick Block97/Brick Block99/Brick Block94/Brick Block93/Brick Block92/Brick Block91/Brick Block90/Brick Block89/Brick Block88/Brick Block87/Brick Block86/Brick Block85/Brick Block84/Brick Block82/Brick Block81/Brick Block80/Brick Block79/Brick Block78/Brick Block77/Brick Block76/Brick Block75/Brick Block74/Brick Block73/Brick Block134/Brick Block133/Brick Block132" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( -64, 64 )
+
+[node name="Brick Block130" parent="Brick Block 3/Brick Block42/Brick Block97/Brick Block99/Brick Block94/Brick Block93/Brick Block92/Brick Block91/Brick Block90/Brick Block89/Brick Block88/Brick Block87/Brick Block86/Brick Block85/Brick Block84/Brick Block82/Brick Block81/Brick Block80/Brick Block79/Brick Block78/Brick Block77/Brick Block76/Brick Block75/Brick Block74/Brick Block73/Brick Block134/Brick Block133/Brick Block132/Brick Block131" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( -64, 0 )
+
+[node name="Brick Block129" parent="Brick Block 3/Brick Block42/Brick Block97/Brick Block99/Brick Block94/Brick Block93/Brick Block92/Brick Block91/Brick Block90/Brick Block89/Brick Block88/Brick Block87/Brick Block86/Brick Block85/Brick Block84/Brick Block82/Brick Block81/Brick Block80/Brick Block79/Brick Block78/Brick Block77/Brick Block76/Brick Block75/Brick Block74/Brick Block73/Brick Block134/Brick Block133/Brick Block132/Brick Block131/Brick Block130" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( -64, 0 )
+
+[node name="Brick Block127" parent="Brick Block 3/Brick Block42/Brick Block97/Brick Block99/Brick Block94/Brick Block93/Brick Block92/Brick Block91/Brick Block90/Brick Block89/Brick Block88/Brick Block87/Brick Block86/Brick Block85/Brick Block84/Brick Block82/Brick Block81/Brick Block80/Brick Block79/Brick Block78/Brick Block77/Brick Block76/Brick Block75/Brick Block74/Brick Block73/Brick Block134/Brick Block133/Brick Block132/Brick Block131/Brick Block130/Brick Block129" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( -128, 0 )
+
+[node name="Brick Block126" parent="Brick Block 3/Brick Block42/Brick Block97/Brick Block99/Brick Block94/Brick Block93/Brick Block92/Brick Block91/Brick Block90/Brick Block89/Brick Block88/Brick Block87/Brick Block86/Brick Block85/Brick Block84/Brick Block82/Brick Block81/Brick Block80/Brick Block79/Brick Block78/Brick Block77/Brick Block76/Brick Block75/Brick Block74/Brick Block73/Brick Block134/Brick Block133/Brick Block132/Brick Block131/Brick Block130/Brick Block129/Brick Block127" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( -224, -544 )
+
+[node name="Brick Block125" parent="Brick Block 3/Brick Block42/Brick Block97/Brick Block99/Brick Block94/Brick Block93/Brick Block92/Brick Block91/Brick Block90/Brick Block89/Brick Block88/Brick Block87/Brick Block86/Brick Block85/Brick Block84/Brick Block82/Brick Block81/Brick Block80/Brick Block79/Brick Block78/Brick Block77/Brick Block76/Brick Block75/Brick Block74/Brick Block73/Brick Block134/Brick Block133/Brick Block132/Brick Block131/Brick Block130/Brick Block129/Brick Block127/Brick Block126" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 0, 0 )
+
+[node name="Brick Block124" parent="Brick Block 3/Brick Block42/Brick Block97/Brick Block99/Brick Block94/Brick Block93/Brick Block92/Brick Block91/Brick Block90/Brick Block89/Brick Block88/Brick Block87/Brick Block86/Brick Block85/Brick Block84/Brick Block82/Brick Block81/Brick Block80/Brick Block79/Brick Block78/Brick Block77/Brick Block76/Brick Block75/Brick Block74/Brick Block73/Brick Block134/Brick Block133/Brick Block132/Brick Block131/Brick Block130/Brick Block129/Brick Block127/Brick Block126/Brick Block125" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 0, 0 )
+
+[node name="Brick Block123" parent="Brick Block 3/Brick Block42/Brick Block97/Brick Block99/Brick Block94/Brick Block93/Brick Block92/Brick Block91/Brick Block90/Brick Block89/Brick Block88/Brick Block87/Brick Block86/Brick Block85/Brick Block84/Brick Block82/Brick Block81/Brick Block80/Brick Block79/Brick Block78/Brick Block77/Brick Block76/Brick Block75/Brick Block74/Brick Block73/Brick Block134/Brick Block133/Brick Block132/Brick Block131/Brick Block130/Brick Block129/Brick Block127/Brick Block126/Brick Block125/Brick Block124" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 0, 0 )
+
+[node name="Brick Block122" parent="Brick Block 3/Brick Block42/Brick Block97/Brick Block99/Brick Block94/Brick Block93/Brick Block92/Brick Block91/Brick Block90/Brick Block89/Brick Block88/Brick Block87/Brick Block86/Brick Block85/Brick Block84/Brick Block82/Brick Block81/Brick Block80/Brick Block79/Brick Block78/Brick Block77/Brick Block76/Brick Block75/Brick Block74/Brick Block73/Brick Block134/Brick Block133/Brick Block132/Brick Block131/Brick Block130/Brick Block129/Brick Block127/Brick Block126/Brick Block125/Brick Block124/Brick Block123" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 0, 0 )
+
+[node name="Brick Block121" parent="Brick Block 3/Brick Block42/Brick Block97/Brick Block99/Brick Block94/Brick Block93/Brick Block92/Brick Block91/Brick Block90/Brick Block89/Brick Block88/Brick Block87/Brick Block86/Brick Block85/Brick Block84/Brick Block82/Brick Block81/Brick Block80/Brick Block79/Brick Block78/Brick Block77/Brick Block76/Brick Block75/Brick Block74/Brick Block73/Brick Block134/Brick Block133/Brick Block132/Brick Block131/Brick Block130/Brick Block129/Brick Block127/Brick Block126/Brick Block125/Brick Block124/Brick Block123/Brick Block122" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 0, 0 )
+
+[node name="Brick Block120" parent="Brick Block 3/Brick Block42/Brick Block97/Brick Block99/Brick Block94/Brick Block93/Brick Block92/Brick Block91/Brick Block90/Brick Block89/Brick Block88/Brick Block87/Brick Block86/Brick Block85/Brick Block84/Brick Block82/Brick Block81/Brick Block80/Brick Block79/Brick Block78/Brick Block77/Brick Block76/Brick Block75/Brick Block74/Brick Block73/Brick Block134/Brick Block133/Brick Block132/Brick Block131/Brick Block130/Brick Block129/Brick Block127/Brick Block126/Brick Block125/Brick Block124/Brick Block123/Brick Block122/Brick Block121" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 0, 0 )
+
+[node name="Brick Block119" parent="Brick Block 3/Brick Block42/Brick Block97/Brick Block99/Brick Block94/Brick Block93/Brick Block92/Brick Block91/Brick Block90/Brick Block89/Brick Block88/Brick Block87/Brick Block86/Brick Block85/Brick Block84/Brick Block82/Brick Block81/Brick Block80/Brick Block79/Brick Block78/Brick Block77/Brick Block76/Brick Block75/Brick Block74/Brick Block73/Brick Block134/Brick Block133/Brick Block132/Brick Block131/Brick Block130/Brick Block129/Brick Block127/Brick Block126/Brick Block125/Brick Block124/Brick Block123/Brick Block122/Brick Block121/Brick Block120" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 0, 0 )
+
+[node name="Brick Block118" parent="Brick Block 3/Brick Block42/Brick Block97/Brick Block99/Brick Block94/Brick Block93/Brick Block92/Brick Block91/Brick Block90/Brick Block89/Brick Block88/Brick Block87/Brick Block86/Brick Block85/Brick Block84/Brick Block82/Brick Block81/Brick Block80/Brick Block79/Brick Block78/Brick Block77/Brick Block76/Brick Block75/Brick Block74/Brick Block73/Brick Block134/Brick Block133/Brick Block132/Brick Block131/Brick Block130/Brick Block129/Brick Block127/Brick Block126/Brick Block125/Brick Block124/Brick Block123/Brick Block122/Brick Block121/Brick Block120/Brick Block119" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 0, 0 )
+
+[node name="Brick Block117" parent="Brick Block 3/Brick Block42/Brick Block97/Brick Block99/Brick Block94/Brick Block93/Brick Block92/Brick Block91/Brick Block90/Brick Block89/Brick Block88/Brick Block87/Brick Block86/Brick Block85/Brick Block84/Brick Block82/Brick Block81/Brick Block80/Brick Block79/Brick Block78/Brick Block77/Brick Block76/Brick Block75/Brick Block74/Brick Block73/Brick Block134/Brick Block133/Brick Block132/Brick Block131/Brick Block130/Brick Block129/Brick Block127/Brick Block126/Brick Block125/Brick Block124/Brick Block123/Brick Block122/Brick Block121/Brick Block120/Brick Block119/Brick Block118" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 0, 0 )
+
+[node name="Brick Block19" parent="Brick Block 3/Brick Block42/Brick Block97/Brick Block99/Brick Block94/Brick Block93/Brick Block92/Brick Block91/Brick Block90/Brick Block89/Brick Block88/Brick Block87/Brick Block86/Brick Block85/Brick Block84/Brick Block82/Brick Block81/Brick Block80/Brick Block79/Brick Block78/Brick Block77/Brick Block76/Brick Block75/Brick Block74/Brick Block73/Brick Block134/Brick Block133/Brick Block132/Brick Block131/Brick Block130/Brick Block129/Brick Block127/Brick Block126/Brick Block125/Brick Block124/Brick Block123/Brick Block122/Brick Block121/Brick Block120/Brick Block119/Brick Block118/Brick Block117" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 0, 0 )
+
+[node name="Brick Block18" parent="Brick Block 3/Brick Block42/Brick Block97/Brick Block99/Brick Block94/Brick Block93/Brick Block92/Brick Block91/Brick Block90/Brick Block89/Brick Block88/Brick Block87/Brick Block86/Brick Block85/Brick Block84/Brick Block82/Brick Block81/Brick Block80/Brick Block79/Brick Block78/Brick Block77/Brick Block76/Brick Block75/Brick Block74/Brick Block73/Brick Block134/Brick Block133/Brick Block132/Brick Block131/Brick Block130/Brick Block129/Brick Block127/Brick Block126/Brick Block125/Brick Block124/Brick Block123/Brick Block122/Brick Block121/Brick Block120/Brick Block119/Brick Block118/Brick Block117/Brick Block19" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 96, 384 )
+
+[node name="Brick Block16" parent="Brick Block 3/Brick Block42/Brick Block97/Brick Block99/Brick Block94/Brick Block93/Brick Block92/Brick Block91/Brick Block90/Brick Block89/Brick Block88/Brick Block87/Brick Block86/Brick Block85/Brick Block84/Brick Block82/Brick Block81/Brick Block80/Brick Block79/Brick Block78/Brick Block77/Brick Block76/Brick Block75/Brick Block74/Brick Block73/Brick Block134/Brick Block133/Brick Block132/Brick Block131/Brick Block130/Brick Block129/Brick Block127/Brick Block126/Brick Block125/Brick Block124/Brick Block123/Brick Block122/Brick Block121/Brick Block120/Brick Block119/Brick Block118/Brick Block117/Brick Block19/Brick Block18" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 64, -64 )
+
+[node name="Brick Block15" parent="Brick Block 3/Brick Block42/Brick Block97/Brick Block99/Brick Block94/Brick Block93/Brick Block92/Brick Block91/Brick Block90/Brick Block89/Brick Block88/Brick Block87/Brick Block86/Brick Block85/Brick Block84/Brick Block82/Brick Block81/Brick Block80/Brick Block79/Brick Block78/Brick Block77/Brick Block76/Brick Block75/Brick Block74/Brick Block73/Brick Block134/Brick Block133/Brick Block132/Brick Block131/Brick Block130/Brick Block129/Brick Block127/Brick Block126/Brick Block125/Brick Block124/Brick Block123/Brick Block122/Brick Block121/Brick Block120/Brick Block119/Brick Block118/Brick Block117/Brick Block19/Brick Block18/Brick Block16" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( -192, 64 )
+
+[node name="Brick Block41" parent="Brick Block 3/Brick Block42/Brick Block97/Brick Block99/Brick Block94/Brick Block93/Brick Block92/Brick Block91/Brick Block90/Brick Block89/Brick Block88/Brick Block87/Brick Block86/Brick Block85/Brick Block84/Brick Block82/Brick Block81/Brick Block80/Brick Block79/Brick Block78/Brick Block77/Brick Block76/Brick Block75/Brick Block74/Brick Block73/Brick Block134/Brick Block133/Brick Block132/Brick Block131/Brick Block130/Brick Block129/Brick Block127/Brick Block126/Brick Block125/Brick Block124/Brick Block123/Brick Block122/Brick Block121/Brick Block120/Brick Block119/Brick Block118/Brick Block117/Brick Block19/Brick Block18/Brick Block16/Brick Block15" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 256, -128 )
+
+[node name="Brick Block40" parent="Brick Block 3/Brick Block42/Brick Block97/Brick Block99/Brick Block94/Brick Block93/Brick Block92/Brick Block91/Brick Block90/Brick Block89/Brick Block88/Brick Block87/Brick Block86/Brick Block85/Brick Block84/Brick Block82/Brick Block81/Brick Block80/Brick Block79/Brick Block78/Brick Block77/Brick Block76/Brick Block75/Brick Block74/Brick Block73/Brick Block134/Brick Block133/Brick Block132/Brick Block131/Brick Block130/Brick Block129/Brick Block127/Brick Block126/Brick Block125/Brick Block124/Brick Block123/Brick Block122/Brick Block121/Brick Block120/Brick Block119/Brick Block118/Brick Block117/Brick Block19/Brick Block18/Brick Block16/Brick Block15/Brick Block41" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( -416, 96 )
+
+[node name="Brick Block39" parent="Brick Block 3/Brick Block42/Brick Block97/Brick Block99/Brick Block94/Brick Block93/Brick Block92/Brick Block91/Brick Block90/Brick Block89/Brick Block88/Brick Block87/Brick Block86/Brick Block85/Brick Block84/Brick Block82/Brick Block81/Brick Block80/Brick Block79/Brick Block78/Brick Block77/Brick Block76/Brick Block75/Brick Block74/Brick Block73/Brick Block134/Brick Block133/Brick Block132/Brick Block131/Brick Block130/Brick Block129/Brick Block127/Brick Block126/Brick Block125/Brick Block124/Brick Block123/Brick Block122/Brick Block121/Brick Block120/Brick Block119/Brick Block118/Brick Block117/Brick Block19/Brick Block18/Brick Block16/Brick Block15/Brick Block41/Brick Block40" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 64, -64 )
+
+[node name="Brick Block38" parent="Brick Block 3/Brick Block42/Brick Block97/Brick Block99/Brick Block94/Brick Block93/Brick Block92/Brick Block91/Brick Block90/Brick Block89/Brick Block88/Brick Block87/Brick Block86/Brick Block85/Brick Block84/Brick Block82/Brick Block81/Brick Block80/Brick Block79/Brick Block78/Brick Block77/Brick Block76/Brick Block75/Brick Block74/Brick Block73/Brick Block134/Brick Block133/Brick Block132/Brick Block131/Brick Block130/Brick Block129/Brick Block127/Brick Block126/Brick Block125/Brick Block124/Brick Block123/Brick Block122/Brick Block121/Brick Block120/Brick Block119/Brick Block118/Brick Block117/Brick Block19/Brick Block18/Brick Block16/Brick Block15/Brick Block41/Brick Block40/Brick Block39" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( -32, 32 )
+
+[node name="Brick Block36" parent="Brick Block 3/Brick Block42/Brick Block97/Brick Block99/Brick Block94/Brick Block93/Brick Block92/Brick Block91/Brick Block90/Brick Block89/Brick Block88/Brick Block87/Brick Block86/Brick Block85/Brick Block84/Brick Block82/Brick Block81/Brick Block80/Brick Block79/Brick Block78/Brick Block77/Brick Block76/Brick Block75/Brick Block74/Brick Block73/Brick Block134/Brick Block133/Brick Block132/Brick Block131/Brick Block130/Brick Block129/Brick Block127/Brick Block126/Brick Block125/Brick Block124/Brick Block123/Brick Block122/Brick Block121/Brick Block120/Brick Block119/Brick Block118/Brick Block117/Brick Block19/Brick Block18/Brick Block16/Brick Block15/Brick Block41/Brick Block40/Brick Block39/Brick Block38" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( -64, 64 )
+
+[node name="Brick Block35" parent="Brick Block 3/Brick Block42/Brick Block97/Brick Block99/Brick Block94/Brick Block93/Brick Block92/Brick Block91/Brick Block90/Brick Block89/Brick Block88/Brick Block87/Brick Block86/Brick Block85/Brick Block84/Brick Block82/Brick Block81/Brick Block80/Brick Block79/Brick Block78/Brick Block77/Brick Block76/Brick Block75/Brick Block74/Brick Block73/Brick Block134/Brick Block133/Brick Block132/Brick Block131/Brick Block130/Brick Block129/Brick Block127/Brick Block126/Brick Block125/Brick Block124/Brick Block123/Brick Block122/Brick Block121/Brick Block120/Brick Block119/Brick Block118/Brick Block117/Brick Block19/Brick Block18/Brick Block16/Brick Block15/Brick Block41/Brick Block40/Brick Block39/Brick Block38/Brick Block36" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( -320, -288 )
+
+[node name="Brick Block34" parent="Brick Block 3/Brick Block42/Brick Block97/Brick Block99/Brick Block94/Brick Block93/Brick Block92/Brick Block91/Brick Block90/Brick Block89/Brick Block88/Brick Block87/Brick Block86/Brick Block85/Brick Block84/Brick Block82/Brick Block81/Brick Block80/Brick Block79/Brick Block78/Brick Block77/Brick Block76/Brick Block75/Brick Block74/Brick Block73/Brick Block134/Brick Block133/Brick Block132/Brick Block131/Brick Block130/Brick Block129/Brick Block127/Brick Block126/Brick Block125/Brick Block124/Brick Block123/Brick Block122/Brick Block121/Brick Block120/Brick Block119/Brick Block118/Brick Block117/Brick Block19/Brick Block18/Brick Block16/Brick Block15/Brick Block41/Brick Block40/Brick Block39/Brick Block38/Brick Block36/Brick Block35" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 0, -64 )
+
+[node name="Brick Block33" parent="Brick Block 3/Brick Block42/Brick Block97/Brick Block99/Brick Block94/Brick Block93/Brick Block92/Brick Block91/Brick Block90/Brick Block89/Brick Block88/Brick Block87/Brick Block86/Brick Block85/Brick Block84/Brick Block82/Brick Block81/Brick Block80/Brick Block79/Brick Block78/Brick Block77/Brick Block76/Brick Block75/Brick Block74/Brick Block73/Brick Block134/Brick Block133/Brick Block132/Brick Block131/Brick Block130/Brick Block129/Brick Block127/Brick Block126/Brick Block125/Brick Block124/Brick Block123/Brick Block122/Brick Block121/Brick Block120/Brick Block119/Brick Block118/Brick Block117/Brick Block19/Brick Block18/Brick Block16/Brick Block15/Brick Block41/Brick Block40/Brick Block39/Brick Block38/Brick Block36/Brick Block35/Brick Block34" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( -256, 32 )
+
+[node name="Brick Block32" parent="Brick Block 3/Brick Block42/Brick Block97/Brick Block99/Brick Block94/Brick Block93/Brick Block92/Brick Block91/Brick Block90/Brick Block89/Brick Block88/Brick Block87/Brick Block86/Brick Block85/Brick Block84/Brick Block82/Brick Block81/Brick Block80/Brick Block79/Brick Block78/Brick Block77/Brick Block76/Brick Block75/Brick Block74/Brick Block73/Brick Block134/Brick Block133/Brick Block132/Brick Block131/Brick Block130/Brick Block129/Brick Block127/Brick Block126/Brick Block125/Brick Block124/Brick Block123/Brick Block122/Brick Block121/Brick Block120/Brick Block119/Brick Block118/Brick Block117/Brick Block19/Brick Block18/Brick Block16/Brick Block15/Brick Block41/Brick Block40/Brick Block39/Brick Block38/Brick Block36/Brick Block35/Brick Block34/Brick Block33" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 0, -64 )
+
+[node name="Brick Block31" parent="Brick Block 3/Brick Block42/Brick Block97/Brick Block99/Brick Block94/Brick Block93/Brick Block92/Brick Block91/Brick Block90/Brick Block89/Brick Block88/Brick Block87/Brick Block86/Brick Block85/Brick Block84/Brick Block82/Brick Block81/Brick Block80/Brick Block79/Brick Block78/Brick Block77/Brick Block76/Brick Block75/Brick Block74/Brick Block73/Brick Block134/Brick Block133/Brick Block132/Brick Block131/Brick Block130/Brick Block129/Brick Block127/Brick Block126/Brick Block125/Brick Block124/Brick Block123/Brick Block122/Brick Block121/Brick Block120/Brick Block119/Brick Block118/Brick Block117/Brick Block19/Brick Block18/Brick Block16/Brick Block15/Brick Block41/Brick Block40/Brick Block39/Brick Block38/Brick Block36/Brick Block35/Brick Block34/Brick Block33/Brick Block32" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 0, -64 )
+
+[node name="Brick Block30" parent="Brick Block 3/Brick Block42/Brick Block97/Brick Block99/Brick Block94/Brick Block93/Brick Block92/Brick Block91/Brick Block90/Brick Block89/Brick Block88/Brick Block87/Brick Block86/Brick Block85/Brick Block84/Brick Block82/Brick Block81/Brick Block80/Brick Block79/Brick Block78/Brick Block77/Brick Block76/Brick Block75/Brick Block74/Brick Block73/Brick Block134/Brick Block133/Brick Block132/Brick Block131/Brick Block130/Brick Block129/Brick Block127/Brick Block126/Brick Block125/Brick Block124/Brick Block123/Brick Block122/Brick Block121/Brick Block120/Brick Block119/Brick Block118/Brick Block117/Brick Block19/Brick Block18/Brick Block16/Brick Block15/Brick Block41/Brick Block40/Brick Block39/Brick Block38/Brick Block36/Brick Block35/Brick Block34/Brick Block33/Brick Block32/Brick Block31" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 0, -64 )
+
+[node name="Brick Block29" parent="Brick Block 3/Brick Block42/Brick Block97/Brick Block99/Brick Block94/Brick Block93/Brick Block92/Brick Block91/Brick Block90/Brick Block89/Brick Block88/Brick Block87/Brick Block86/Brick Block85/Brick Block84/Brick Block82/Brick Block81/Brick Block80/Brick Block79/Brick Block78/Brick Block77/Brick Block76/Brick Block75/Brick Block74/Brick Block73/Brick Block134/Brick Block133/Brick Block132/Brick Block131/Brick Block130/Brick Block129/Brick Block127/Brick Block126/Brick Block125/Brick Block124/Brick Block123/Brick Block122/Brick Block121/Brick Block120/Brick Block119/Brick Block118/Brick Block117/Brick Block19/Brick Block18/Brick Block16/Brick Block15/Brick Block41/Brick Block40/Brick Block39/Brick Block38/Brick Block36/Brick Block35/Brick Block34/Brick Block33/Brick Block32/Brick Block31/Brick Block30" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 256, 288 )
+
+[node name="Brick Block28" parent="Brick Block 3/Brick Block42/Brick Block97/Brick Block99/Brick Block94/Brick Block93/Brick Block92/Brick Block91/Brick Block90/Brick Block89/Brick Block88/Brick Block87/Brick Block86/Brick Block85/Brick Block84/Brick Block82/Brick Block81/Brick Block80/Brick Block79/Brick Block78/Brick Block77/Brick Block76/Brick Block75/Brick Block74/Brick Block73/Brick Block134/Brick Block133/Brick Block132/Brick Block131/Brick Block130/Brick Block129/Brick Block127/Brick Block126/Brick Block125/Brick Block124/Brick Block123/Brick Block122/Brick Block121/Brick Block120/Brick Block119/Brick Block118/Brick Block117/Brick Block19/Brick Block18/Brick Block16/Brick Block15/Brick Block41/Brick Block40/Brick Block39/Brick Block38/Brick Block36/Brick Block35/Brick Block34/Brick Block33/Brick Block32/Brick Block31/Brick Block30/Brick Block29" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 0, 64 )
+
+[node name="Brick Block27" parent="Brick Block 3/Brick Block42/Brick Block97/Brick Block99/Brick Block94/Brick Block93/Brick Block92/Brick Block91/Brick Block90/Brick Block89/Brick Block88/Brick Block87/Brick Block86/Brick Block85/Brick Block84/Brick Block82/Brick Block81/Brick Block80/Brick Block79/Brick Block78/Brick Block77/Brick Block76/Brick Block75/Brick Block74/Brick Block73/Brick Block134/Brick Block133/Brick Block132/Brick Block131/Brick Block130/Brick Block129/Brick Block127/Brick Block126/Brick Block125/Brick Block124/Brick Block123/Brick Block122/Brick Block121/Brick Block120/Brick Block119/Brick Block118/Brick Block117/Brick Block19/Brick Block18/Brick Block16/Brick Block15/Brick Block41/Brick Block40/Brick Block39/Brick Block38/Brick Block36/Brick Block35/Brick Block34/Brick Block33/Brick Block32/Brick Block31/Brick Block30/Brick Block29/Brick Block28" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 0, 64 )
+
+[node name="Brick Block26" parent="Brick Block 3/Brick Block42/Brick Block97/Brick Block99/Brick Block94/Brick Block93/Brick Block92/Brick Block91/Brick Block90/Brick Block89/Brick Block88/Brick Block87/Brick Block86/Brick Block85/Brick Block84/Brick Block82/Brick Block81/Brick Block80/Brick Block79/Brick Block78/Brick Block77/Brick Block76/Brick Block75/Brick Block74/Brick Block73/Brick Block134/Brick Block133/Brick Block132/Brick Block131/Brick Block130/Brick Block129/Brick Block127/Brick Block126/Brick Block125/Brick Block124/Brick Block123/Brick Block122/Brick Block121/Brick Block120/Brick Block119/Brick Block118/Brick Block117/Brick Block19/Brick Block18/Brick Block16/Brick Block15/Brick Block41/Brick Block40/Brick Block39/Brick Block38/Brick Block36/Brick Block35/Brick Block34/Brick Block33/Brick Block32/Brick Block31/Brick Block30/Brick Block29/Brick Block28/Brick Block27" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 0, 64 )
+
+[node name="Brick Block25" parent="Brick Block 3/Brick Block42/Brick Block97/Brick Block99/Brick Block94/Brick Block93/Brick Block92/Brick Block91/Brick Block90/Brick Block89/Brick Block88/Brick Block87/Brick Block86/Brick Block85/Brick Block84/Brick Block82/Brick Block81/Brick Block80/Brick Block79/Brick Block78/Brick Block77/Brick Block76/Brick Block75/Brick Block74/Brick Block73/Brick Block134/Brick Block133/Brick Block132/Brick Block131/Brick Block130/Brick Block129/Brick Block127/Brick Block126/Brick Block125/Brick Block124/Brick Block123/Brick Block122/Brick Block121/Brick Block120/Brick Block119/Brick Block118/Brick Block117/Brick Block19/Brick Block18/Brick Block16/Brick Block15/Brick Block41/Brick Block40/Brick Block39/Brick Block38/Brick Block36/Brick Block35/Brick Block34/Brick Block33/Brick Block32/Brick Block31/Brick Block30/Brick Block29/Brick Block28/Brick Block27/Brick Block26" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 0, 64 )
+
+[node name="Brick Block24" parent="Brick Block 3/Brick Block42/Brick Block97/Brick Block99/Brick Block94/Brick Block93/Brick Block92/Brick Block91/Brick Block90/Brick Block89/Brick Block88/Brick Block87/Brick Block86/Brick Block85/Brick Block84/Brick Block82/Brick Block81/Brick Block80/Brick Block79/Brick Block78/Brick Block77/Brick Block76/Brick Block75/Brick Block74/Brick Block73/Brick Block134/Brick Block133/Brick Block132/Brick Block131/Brick Block130/Brick Block129/Brick Block127/Brick Block126/Brick Block125/Brick Block124/Brick Block123/Brick Block122/Brick Block121/Brick Block120/Brick Block119/Brick Block118/Brick Block117/Brick Block19/Brick Block18/Brick Block16/Brick Block15/Brick Block41/Brick Block40/Brick Block39/Brick Block38/Brick Block36/Brick Block35/Brick Block34/Brick Block33/Brick Block32/Brick Block31/Brick Block30/Brick Block29/Brick Block28/Brick Block27/Brick Block26/Brick Block25" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 0, 64 )
+
+[node name="Brick Block23" parent="Brick Block 3/Brick Block42/Brick Block97/Brick Block99/Brick Block94/Brick Block93/Brick Block92/Brick Block91/Brick Block90/Brick Block89/Brick Block88/Brick Block87/Brick Block86/Brick Block85/Brick Block84/Brick Block82/Brick Block81/Brick Block80/Brick Block79/Brick Block78/Brick Block77/Brick Block76/Brick Block75/Brick Block74/Brick Block73/Brick Block134/Brick Block133/Brick Block132/Brick Block131/Brick Block130/Brick Block129/Brick Block127/Brick Block126/Brick Block125/Brick Block124/Brick Block123/Brick Block122/Brick Block121/Brick Block120/Brick Block119/Brick Block118/Brick Block117/Brick Block19/Brick Block18/Brick Block16/Brick Block15/Brick Block41/Brick Block40/Brick Block39/Brick Block38/Brick Block36/Brick Block35/Brick Block34/Brick Block33/Brick Block32/Brick Block31/Brick Block30/Brick Block29/Brick Block28/Brick Block27/Brick Block26/Brick Block25/Brick Block24" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 224, -384 )
+
+[node name="Brick Block10" parent="Brick Block 3/Brick Block42/Brick Block97/Brick Block99/Brick Block94/Brick Block93/Brick Block92/Brick Block91/Brick Block90/Brick Block89/Brick Block88/Brick Block87/Brick Block86/Brick Block85/Brick Block84/Brick Block82/Brick Block81/Brick Block80/Brick Block79/Brick Block78/Brick Block77/Brick Block76/Brick Block75/Brick Block74/Brick Block73/Brick Block134/Brick Block133/Brick Block132/Brick Block131/Brick Block130/Brick Block129/Brick Block127/Brick Block126/Brick Block125/Brick Block124/Brick Block123/Brick Block122/Brick Block121/Brick Block120/Brick Block119/Brick Block118/Brick Block117/Brick Block19/Brick Block18/Brick Block16/Brick Block15/Brick Block41/Brick Block40/Brick Block39/Brick Block38/Brick Block36/Brick Block35/Brick Block34/Brick Block33/Brick Block32/Brick Block31/Brick Block30/Brick Block29/Brick Block28/Brick Block27/Brick Block26/Brick Block25/Brick Block24/Brick Block23" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 0, 64 )
+
+[node name="Brick Block" parent="Brick Block 3/Brick Block42/Brick Block97/Brick Block99/Brick Block94/Brick Block93/Brick Block92/Brick Block91/Brick Block90/Brick Block89/Brick Block88/Brick Block87/Brick Block86/Brick Block85/Brick Block84/Brick Block82/Brick Block81/Brick Block80/Brick Block79/Brick Block78/Brick Block77/Brick Block76/Brick Block75/Brick Block74/Brick Block73/Brick Block134/Brick Block133/Brick Block132/Brick Block131/Brick Block130/Brick Block129/Brick Block127/Brick Block126/Brick Block125/Brick Block124/Brick Block123/Brick Block122/Brick Block121/Brick Block120/Brick Block119/Brick Block118/Brick Block117/Brick Block19/Brick Block18/Brick Block16/Brick Block15/Brick Block41/Brick Block40/Brick Block39/Brick Block38/Brick Block36/Brick Block35/Brick Block34/Brick Block33/Brick Block32/Brick Block31/Brick Block30/Brick Block29/Brick Block28/Brick Block27/Brick Block26/Brick Block25/Brick Block24/Brick Block23/Brick Block10" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( -608, 288 )
+
+[node name="Brick Block37" parent="Brick Block 3/Brick Block42/Brick Block97/Brick Block99/Brick Block94/Brick Block93/Brick Block92/Brick Block91/Brick Block90/Brick Block89/Brick Block88/Brick Block87/Brick Block86/Brick Block85/Brick Block84/Brick Block82/Brick Block81/Brick Block80/Brick Block79/Brick Block78/Brick Block77/Brick Block76/Brick Block75/Brick Block74/Brick Block73/Brick Block134/Brick Block133/Brick Block132/Brick Block131/Brick Block130/Brick Block129/Brick Block127/Brick Block126/Brick Block125/Brick Block124/Brick Block123/Brick Block122/Brick Block121/Brick Block120/Brick Block119/Brick Block118/Brick Block117/Brick Block19/Brick Block18/Brick Block16/Brick Block15/Brick Block41/Brick Block40/Brick Block39/Brick Block38/Brick Block36" index="3" instance=ExtResource( 3 )]
+
+position = Vector2( -96, -352 )
+
+[node name="Brick Block17" parent="Brick Block 3/Brick Block42/Brick Block97/Brick Block99/Brick Block94/Brick Block93/Brick Block92/Brick Block91/Brick Block90/Brick Block89/Brick Block88/Brick Block87/Brick Block86/Brick Block85/Brick Block84/Brick Block82/Brick Block81/Brick Block80/Brick Block79/Brick Block78/Brick Block77/Brick Block76/Brick Block75/Brick Block74/Brick Block73/Brick Block134/Brick Block133/Brick Block132/Brick Block131/Brick Block130/Brick Block129/Brick Block127/Brick Block126/Brick Block125/Brick Block124/Brick Block123/Brick Block122/Brick Block121/Brick Block120/Brick Block119/Brick Block118/Brick Block117/Brick Block19/Brick Block18/Brick Block16" index="3" instance=ExtResource( 3 )]
+
+position = Vector2( 64, -128 )
+
+[node name="Brick Block128" parent="Brick Block 3/Brick Block42/Brick Block97/Brick Block99/Brick Block94/Brick Block93/Brick Block92/Brick Block91/Brick Block90/Brick Block89/Brick Block88/Brick Block87/Brick Block86/Brick Block85/Brick Block84/Brick Block82/Brick Block81/Brick Block80/Brick Block79/Brick Block78/Brick Block77/Brick Block76/Brick Block75/Brick Block74/Brick Block73/Brick Block134/Brick Block133/Brick Block132/Brick Block131/Brick Block130/Brick Block129/Brick Block127" index="3" instance=ExtResource( 3 )]
+
+position = Vector2( 64, 0 )
+
+[node name="Brick Block83" parent="Brick Block 3/Brick Block42/Brick Block97/Brick Block99/Brick Block94/Brick Block93/Brick Block92/Brick Block91/Brick Block90/Brick Block89/Brick Block88/Brick Block87/Brick Block86/Brick Block85/Brick Block84/Brick Block82" index="3" instance=ExtResource( 3 )]
+
+position = Vector2( -64, 0 )
+
+[node name="Brick Block107" parent="Brick Block 3/Brick Block42" index="3" instance=ExtResource( 3 )]
+
+position = Vector2( -128, -160 )
+
+[node name="Brick Block106" parent="Brick Block 3/Brick Block42/Brick Block107" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 0, -64 )
+
+[node name="Brick Block104" parent="Brick Block 3/Brick Block42/Brick Block107/Brick Block106" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( -64, -32 )
+
+[node name="Brick Block96" parent="Brick Block 3/Brick Block42/Brick Block107/Brick Block106/Brick Block104" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 384, 608 )
+
+[node name="Brick Block105" parent="Brick Block 3/Brick Block42/Brick Block107/Brick Block106" index="3" instance=ExtResource( 3 )]
+
+position = Vector2( -128, -32 )
+
+[node name="Brick Block103" parent="Brick Block 3/Brick Block42/Brick Block107/Brick Block106/Brick Block105" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 0, 640 )
+
+[node name="Brick Block101" parent="Brick Block 3/Brick Block42/Brick Block107/Brick Block106/Brick Block105/Brick Block103" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 128, 0 )
+
+[node name="Brick Block98" parent="Brick Block 3/Brick Block42/Brick Block107/Brick Block106/Brick Block105" index="3" instance=ExtResource( 3 )]
+
+position = Vector2( 320, 640 )
+
+[node name="Brick Block95" parent="Brick Block 3/Brick Block42/Brick Block107" index="3" instance=ExtResource( 3 )]
+
+position = Vector2( 352, 480 )
+
+[node name="Brick Block108" parent="Brick Block 3/Brick Block42/Brick Block107/Brick Block95" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( -544, -576 )
+
+[node name="Brick Block52" parent="Brick Block 3/Brick Block42/Brick Block107" index="4" instance=ExtResource( 3 )]
+
+position = Vector2( -96, 160 )
+
+[node name="Brick Block51" parent="Brick Block 3/Brick Block42/Brick Block107/Brick Block52" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 32, -32 )
+
+[node name="Brick Block50" parent="Brick Block 3/Brick Block42/Brick Block107/Brick Block52" index="3" instance=ExtResource( 3 )]
+
+position = Vector2( 416, 0 )
+
+[node name="Brick Block48" parent="Brick Block 3/Brick Block42/Brick Block107/Brick Block52" index="4" instance=ExtResource( 3 )]
+
+position = Vector2( 224, 0 )
+
+[node name="Brick Block53" parent="Brick Block 3/Brick Block42/Brick Block107/Brick Block52" index="5" instance=ExtResource( 3 )]
+
+position = Vector2( -32, 32 )
+
+[node name="Brick Block62" parent="Brick Block 3/Brick Block42/Brick Block107/Brick Block52" index="6" instance=ExtResource( 3 )]
+
+position = Vector2( -160, -256 )
+
+[node name="Brick Block63" parent="Brick Block 3/Brick Block42/Brick Block107/Brick Block52/Brick Block62" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( -64, -64 )
+
+[node name="Brick Block59" parent="Brick Block 3/Brick Block42/Brick Block107/Brick Block52/Brick Block62" index="3" instance=ExtResource( 3 )]
+
+position = Vector2( 64, 704 )
+
+[node name="Brick Block66" parent="Brick Block 3/Brick Block42/Brick Block107/Brick Block52/Brick Block62" index="4" instance=ExtResource( 3 )]
+
+position = Vector2( -256, 0 )
+
+[node name="Brick Block65" parent="Brick Block 3/Brick Block42/Brick Block107/Brick Block52/Brick Block62/Brick Block66" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 64, 0 )
+
+[node name="Brick Block64" parent="Brick Block 3/Brick Block42/Brick Block107/Brick Block52/Brick Block62/Brick Block66" index="3" instance=ExtResource( 3 )]
+
+position = Vector2( 128, -64 )
+
+[node name="Brick Block60" parent="Brick Block 3/Brick Block42/Brick Block107/Brick Block52/Brick Block62/Brick Block66" index="4" instance=ExtResource( 3 )]
+
+position = Vector2( 64, 672 )
+
+[node name="Brick Block61" parent="Brick Block 3/Brick Block42/Brick Block107/Brick Block52/Brick Block62/Brick Block66" index="5" instance=ExtResource( 3 )]
+
+position = Vector2( 320, 640 )
+
+[node name="Brick Block67" parent="Brick Block 3/Brick Block42/Brick Block107/Brick Block52/Brick Block62" index="5" instance=ExtResource( 3 )]
+
+position = Vector2( -320, -32 )
+
+[node name="Brick Block68" parent="Brick Block 3/Brick Block42/Brick Block107/Brick Block52/Brick Block62" index="6" instance=ExtResource( 3 )]
+
+position = Vector2( -384, 0 )
+
+[node name="Brick Block70" parent="Brick Block 3/Brick Block42/Brick Block107/Brick Block52/Brick Block62" index="7" instance=ExtResource( 3 )]
+
+position = Vector2( 64, 576 )
+
+[node name="Brick Block71" parent="Brick Block 3/Brick Block42/Brick Block107/Brick Block52/Brick Block62" index="8" instance=ExtResource( 3 )]
+
+position = Vector2( 96, 544 )
+
+[node name="Brick Block57" parent="Brick Block 3/Brick Block42/Brick Block107/Brick Block52" index="7" instance=ExtResource( 3 )]
+
+position = Vector2( -96, 512 )
+
+[node name="Brick Block56" parent="Brick Block 3/Brick Block42/Brick Block107/Brick Block52" index="8" instance=ExtResource( 3 )]
+
+position = Vector2( 288, 64 )
+
+[node name="Brick Block54" parent="Brick Block 3/Brick Block42/Brick Block107/Brick Block52" index="9" instance=ExtResource( 3 )]
+
+position = Vector2( -64, 64 )
+
+[node name="Brick Block55" parent="Brick Block 3/Brick Block42/Brick Block107/Brick Block52" index="10" instance=ExtResource( 3 )]
+
+position = Vector2( 128, 192 )
+
+[node name="Brick Block58" parent="Brick Block 3/Brick Block42/Brick Block107/Brick Block52" index="11" instance=ExtResource( 3 )]
+
+position = Vector2( -352, 480 )
+
+[node name="Brick Block44" parent="Brick Block 3/Brick Block42/Brick Block107/Brick Block52" index="12" instance=ExtResource( 3 )]
+
+position = Vector2( 224, 0 )
+
+[node name="Brick Block47" parent="Brick Block 3/Brick Block42/Brick Block107/Brick Block52/Brick Block44" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 0, 0 )
+
+[node name="Brick Block45" parent="Brick Block 3/Brick Block42/Brick Block107/Brick Block52" index="13" instance=ExtResource( 3 )]
+
+position = Vector2( 224, 0 )
+
+[node name="Brick Block46" parent="Brick Block 3/Brick Block42/Brick Block107/Brick Block52/Brick Block45" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 0, 0 )
+
+[node name="Brick Block43" parent="Brick Block 3/Brick Block42/Brick Block107/Brick Block52/Brick Block45" index="3" instance=ExtResource( 3 )]
+
+position = Vector2( 0, 0 )
+
+[node name="Brick Block49" parent="Brick Block 3/Brick Block42/Brick Block107/Brick Block52" index="14" instance=ExtResource( 3 )]
+
+position = Vector2( 416, -64 )
+
+[node name="Brick Block109" parent="Brick Block 3/Brick Block42/Brick Block107/Brick Block52" index="15" instance=ExtResource( 3 )]
+
+position = Vector2( -64, -128 )
+
+[node name="Brick Block113" parent="Brick Block 3/Brick Block42/Brick Block107/Brick Block52/Brick Block109" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( 352, 0 )
+
+[node name="Brick Block110" parent="Brick Block 3/Brick Block42/Brick Block107/Brick Block52/Brick Block109/Brick Block113" index="2" instance=ExtResource( 3 )]
+
+position = Vector2( -352, 64 )
+
+[node name="Brick Block111" parent="Brick Block 3/Brick Block42/Brick Block107/Brick Block52/Brick Block109/Brick Block113" index="3" instance=ExtResource( 3 )]
+
+position = Vector2( -160, -32 )
+
+[node name="Brick Block114" parent="Brick Block 3/Brick Block42/Brick Block107/Brick Block52/Brick Block109" index="3" instance=ExtResource( 3 )]
+
+position = Vector2( 416, 0 )
+
+[node name="Brick Block112" parent="Brick Block 3/Brick Block42/Brick Block107/Brick Block52/Brick Block109" index="4" instance=ExtResource( 3 )]
+
+position = Vector2( 352, 0 )
+scale = Vector2( 1.5, 1 )
+
+[node name="Brick Block115" parent="Brick Block 3/Brick Block42/Brick Block107/Brick Block52/Brick Block109" index="5" instance=ExtResource( 3 )]
+
+position = Vector2( 448, 0 )
+
+[node name="Brick Block116" parent="Brick Block 3/Brick Block42/Brick Block107/Brick Block52/Brick Block109" index="6" instance=ExtResource( 3 )]
+
+position = Vector2( 480, 32 )
+
+[node name="Brick Block20" parent="Brick Block 3/Brick Block42/Brick Block107/Brick Block52/Brick Block109" index="7" instance=ExtResource( 3 )]
+
+position = Vector2( 288, 128 )
+
+[node name="Thwomps" parent="." index="3" instance=ExtResource( 4 )]
+
+position = Vector2( 544, 0 )
+
+[node name="Ninji3" parent="." index="4" instance=ExtResource( 1 )]
+
+position = Vector2( 256, 448 )
+
+[node name="world complete_fil" parent="." index="5" instance=ExtResource( 5 )]
+
+editor/display_folded = false
+position = Vector2( 800, 128 )
+
+[node name="world complete_fil3" parent="." index="6" instance=ExtResource( 5 )]
+
+position = Vector2( 832, 544 )
+
+[node name="Node2D" type="Node2D" parent="." index="7"]
+
+position = Vector2( 1312, 576 )
+__meta__ = {
+"_edit_group_": true
+}
+
+[node name="Sprite" type="Sprite" parent="Node2D" index="0"]
+
+scale = Vector2( 0.2, 0.170213 )
+texture = ExtResource( 6 )
+
+[node name="You Win" type="Area2D" parent="Node2D/Sprite" index="0"]
+
+scale = Vector2( 5, 5.875 )
+input_pickable = true
+gravity_vec = Vector2( 0, 1 )
+gravity = 98.0
+linear_damp = 0.1
+angular_damp = 1.0
+audio_bus_override = false
+audio_bus_name = "Master"
+script = ExtResource( 7 )
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="Node2D/Sprite/You Win" index="0"]
+
+scale = Vector2( 4.92308, 4.92308 )
+shape = SubResource( 1 )
+
+
